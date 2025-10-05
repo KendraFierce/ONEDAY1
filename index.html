@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe</title>
+
+  <!-- OneSignal Page SDK -->
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "36b91676-4a8f-43e5-87d1-02ff488aabf2",
+        autoRegister: true, // automatic prompt
+        notifyButton: {
+          enable: true // optional small bell
+        }
+      });
+    });
+  </script>
+
+  <style>
+    /* Full screen background */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      background-image: url('https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/n9Cajf1I8WqZMCAGFAN3/pub/XLEFEUUlQwqxk9RbvdY4.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Optional content on top of background -->
+</body>
+</html>
